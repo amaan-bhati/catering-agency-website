@@ -27,3 +27,9 @@ header a.logo{
 header nav{
     text-align: right;
 }
+
+@media screen and (max-width:730px) {
+    header nav a:not(:first-child){
+        color:white;
+    }
+}
