@@ -33,3 +33,44 @@ header nav{
         color:white;
     }
 }
+
+div.two-columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+div.intro{
+    padding: 80px 0;
+    min-height: 500px;
+}
+div.intro img{
+    position: absolute;
+    top:0;
+    right:0;
+    z-index:-1;
+    width:320px;
+    height:auto;
+}
+div.vertical-line{
+    transform: rotate(-90deg);
+    display: inline-block;
+    position:absolute;
+    left:-70px;
+    bottom:-100px;
+    color:#aaa;
+    text-transform: uppercase;
+    font-size:0.7rem;
+}
+div.vertical-line::after{
+    content:'';
+    width:100px;
+    margin-bottom: 4px;
+    margin-left: 5px;
+    height:1px;
+    display: inline-block;
+    background-color:#ccc;
+}
+div.intro > div.two-columns > div:first-child{
+    position: relative
+}
