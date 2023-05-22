@@ -74,3 +74,29 @@ div.vertical-line::after{
 div.intro > div.two-columns > div:first-child{
     position: relative
 }
+
+div.nutritions{
+    position:relative;
+}
+div.nutritions svg{
+    position: absolute;
+    left:-200px;
+    top:50px;
+    z-index: -1;
+    width: 600px;
+}
+div.horizontal-line{
+    color:#888;
+    font-size:0.7rem;
+    margin-bottom: 30px;
+}
+div.horizontal-line::before{
+    content:'';
+    display: inline-block;
+    width:100px;
+    height:1px;
+    background-color:#aaa;
+    margin-bottom: 2px;
+    margin-right: 5px;
+}
+
