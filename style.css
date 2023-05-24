@@ -143,6 +143,7 @@ div.testimonial-content img.profile{
     border-radius: 50%;
     background-color: var(--green);
 }
+
 .testimonials-columns{
     display: grid;
     grid-template-columns: 1fr 40px;
